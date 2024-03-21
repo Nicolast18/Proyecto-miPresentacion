@@ -9,7 +9,7 @@ body {
         margin-right: auto;
         display: flex;
         flex-wrap: wrap;
-      }
+}
 
 .tituloPrincipal {
     font-family: "Sansita", sans-serif;
@@ -34,7 +34,7 @@ body {
     color: #FFFFFF;
 }
 
-.parrafoBlanco {
+.textoBlanco {
     font-family: "Sansita", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -42,12 +42,75 @@ body {
     color: #FFFFFF;
 }
 
-.contenedor {
-    background-color: #6E07F3;
-    padding: 2%;
+.textoAzul {
+    font-family: "Sansita", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #191970;
 }
 
 .presentacion {
-    margin: 10%;
+    background-color: #6E07F3;
+    padding: 0 0 100px 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-texto-morado {
+    margin: 1% 20% 5% 20%;
+    display: grid;
+
+}
+
+.hobbies {
+    position: relative;
+    bottom: 120px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #D3D3D3;
+    margin: 1% 20% 5% 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.columna {
+    margin: 10;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #FFFFFF;
+    display: grid;
+    grid-template-rows: auto;   
+    justify-content: center;
+    align-items: center;
+}
+
+.trabajos {
+    position: relative;
+    bottom: 120px;
+    background-color: #FFFFFF;
+    margin: 3% 20% 5% 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+figure {
+    margin: 0;
+    width: 200px;
+}
+
+.logosEmpresas {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+
 }
 
