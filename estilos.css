@@ -2,13 +2,13 @@
     box-sizing: border-box;
   }
 
+
+
 body {
-        width: 100%;
-        height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tituloPrincipal {
@@ -24,6 +24,16 @@ body {
     font-style: normal;
     text-align: center;
     color: #191970;
+}
+
+/* figure {
+    margin: 0;
+    width: 40%; 
+} */
+
+.imagenComputador {
+    margin: 0;
+    width: 40%;
 }
 
 .tituloSecundarioBlanco {
@@ -61,7 +71,8 @@ body {
 .contenedor-texto-morado {
     margin: 1% 20% 5% 20%;
     display: grid;
-
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .hobbies {
