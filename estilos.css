@@ -11,6 +11,8 @@ body {
     margin-right: auto;
 }
 
+
+
 .tituloPrincipal {
     font-family: "Sansita", sans-serif;
     font-weight: 400;
@@ -180,18 +182,13 @@ body {
 
 }
 
-/* .trabajos {
+.trabajos {
     position: relative;
     bottom: 120px;
     background-color: #FFFFFF;
-    margin: 3% 20% 5% 20%;
+    margin: 0 20% 0 20%;
     justify-content: center;
     align-items: center;
-}
-
-figure {
-    margin: 0;
-    width: 200px;
 }
 
 .logosEmpresas {
@@ -199,5 +196,19 @@ figure {
     height: 200px;
     object-fit: contain;
 
-} */
+}
+
+.empresas {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #D3D3D3;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    align-items: center;
+
+
+}
 
