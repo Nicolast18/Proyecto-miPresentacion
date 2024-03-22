@@ -2,14 +2,14 @@
     box-sizing: border-box;
   }
 
+html{
+    overflow-x: hidden;
+}
 
 
 body {
     width: 100%;
     overflow-x: hidden;
-    /* height: 100%;
-    margin-left: 0;
-    margin-right: 0; */
 }
 
 
@@ -114,6 +114,7 @@ body {
     grid-template-rows: auto;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .imagenFamilia {
@@ -134,7 +135,8 @@ body {
     display: grid;
     grid-template-areas:
         'titulo titulo titulo'
-        'columna1 columna1 columna2';
+        'columna1 columna1 columna1'
+        'columna2 columna2 columna2';
     grid-template-rows: 20% auto; 
     grid-template-columns: 66%;
     justify-content: center;
@@ -153,9 +155,20 @@ body {
 }
 
 .c3 {
+    position: relative;
     padding-left: 10px;
     padding-right: 10px;
     grid-area: columna2;
+    justify-content: center;
+    align-items: center;
+}
+
+.c3 .mapa {
+    margin: auto;
+}
+
+.mapa {
+    max-height: 250;
 }
 
 .deportesFavoritos {
@@ -214,3 +227,76 @@ body {
 
 }
 
+table{
+    border-collapse: collapse;
+}
+
+table thead{
+    background-color: #5BE9B9;
+}
+
+th {
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .hobbies {
+        grid-template-columns: 1fr;
+    }
+
+    .comidaFavorita{
+            grid-template-areas:
+            'titulo titulo titulo'
+            'columna1 columna1 columna1'
+            'columna2 columna2 columna2';
+    }
+
+    .deportes {
+        grid-template-columns: 1fr;
+    }
+
+    .empresas{
+        grid-template-columns: 1fr;
+    }
+
+    .logosEmpresas {
+        width: 150px;
+        height: 150px;
+    }
+
+    .mapa {
+        max-height: 150px;
+        max-width: 150px;
+    }
+    
+}
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+
+    .comidaFavorita{
+            grid-template-areas:
+            'titulo titulo titulo'
+            'columna1 columna1 columna1'
+            'columna2 columna2 columna2';
+    }
+
+    .deportes {
+        grid-template-columns: 1fr;
+    }
+
+    .empresas{
+        grid-template-columns: 1fr;
+    }
+
+    .logosEmpresas {
+        width: 200px;
+        height: 200px;
+    }
+
+    
+}
